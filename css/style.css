@@ -78,7 +78,7 @@ body {
     position: absolute;
     left: 0;
     top: calc(100% + .2rem);
-    background-color: green;
+    background-color: white;
     border-radius: .2rem;
     box-shadow: 0 2px 5px 0 rgab(0, 0, 0);
     opacity: 0;
@@ -94,31 +94,31 @@ body {
 .dropdown-content-grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
-    gap: .3rem;
+    gap: 1rem;
 }
 
 #drop-links>a {
     text-decoration: none;
-    color: white;
+    color: green;
     display: block;
     padding: .4rem;
 }
 
 #drop-links>a:hover {
-    color: green;
-    background-color: white;
+    color: white;
+    background-color: green;
 }
 
 .drop-content>a {
     text-decoration: none;
-    color: white;
+    color: green;
     display: block;
     padding: .4rem;
 }
 
 .drop-content a:hover {
-    color: green;
-    background-color: white;
+    color: white;
+    background-color: green;
 }
 
 .dropdown.active>.drop-btn+.drop-content {
