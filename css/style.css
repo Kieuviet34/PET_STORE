@@ -1,0 +1,346 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.head {
+    display: flex;
+    background-color: rgb(10, 108, 10);
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.FAQ>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-network>a {
+    color: white;
+    gap: 1rem;
+    margin-left: .4rem;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-button {
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    height: 3rem;
+    align-items: center;
+}
+
+
+/* css dropdown */
+
+.drop-btn {
+    height: 3rem;
+    background-color: white;
+    border: none;
+    padding: .9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropdown.active>.drop-btn,
+.drop-btn:hover {
+    background-color: green;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.drop-content {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .2rem);
+    background-color: green;
+    border-radius: .2rem;
+    box-shadow: 0 2px 5px 0 rgab(0, 0, 0);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(-5px);
+    min-width: 5rem;
+}
+
+.drop-content>a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .4rem;
+}
+
+.drop-content a:hover {
+    color: green;
+    background-color: white;
+}
+
+.dropdown.active>.drop-btn+.drop-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.sign-in {
+    width: 100%;
+    display: flex;
+    /* background-image: url("../img/hugging.jpg"); */
+    background-size: 100% 100%;
+    height: 50rem;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.sign-btn>button {
+    margin-top: 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.45rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mid1 {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+}
+
+.mid>.welcome {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.animals {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.animals>div {
+    width: 20%;
+    /* overflow: hidden; */
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.ani {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border: .4rem solid rgb(236, 230, 230);
+    border-radius: 50%;
+}
+
+.doggy {
+    float: right;
+    width: 30%;
+    position: relative;
+}
+
+.contact_box {
+    width: 100%;
+    height: 12rem;
+    background-image: url("../img/puppy.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.ct_description>h3 {
+    color: green;
+}
+
+.ct_description>p {
+    color: white;
+    font-weight: bold;
+}
+
+.contact_box>.ct_description {
+    width: 50%;
+}
+
+.contact_box>.ct_btn {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct_btn>button {
+    border: none;
+    border-radius: 3rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.footer {
+    color: white;
+    background-color: rgb(27, 26, 26);
+}
+
+.footer>.upper {
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem 0 1rem;
+}
+
+.footer-left>.left-first-half {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-first-half>i {
+    color: green
+}
+
+.left-first-half>i>span {
+    color: white;
+}
+
+.footer-left>.left-remain {
+    margin-left: 2rem;
+}
+
+.left-remain>ul {
+    list-style-type: none;
+}
+
+.left-remain>ul>li {
+    line-height: 1.5rem;
+}
+
+.left-remain>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-right>.right-half {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-half>i {
+    color: green;
+}
+
+.foote-right>.right-remain {
+    width: 50%;
+    display: flex;
+}
+
+.right-remain>div>iframe {
+    width: 4rem;
+    height: 3.2rem;
+}
+
+.right-remain>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.footer>.lower {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.lower>.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box>.input-box-inner {
+    display: flex;
+    gap: 0;
+}
+
+.input-box-inner>input {
+    flex: 1;
+    padding: .7rem;
+    border: none;
+    border-radius: .1rem;
+}
+
+.input-box-inner>button {
+    border: none;
+    color: white;
+    background-color: green;
+    border-radius: .1rem;
+    cursor: pointer;
+}
+
+.lower>.lower-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-right>div>a {
+    color: white;
+}
+
+
+/* 
+
+*/
