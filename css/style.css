@@ -9,6 +9,9 @@ body {
     height: 100%;
 }
 
+
+/* cái FAQ với đống icon bootstrap */
+
 .head {
     display: flex;
     background-color: rgb(10, 108, 10);
@@ -29,6 +32,9 @@ body {
     gap: 1rem;
     margin-left: .4rem;
 }
+
+
+/* phần thanh menu */
 
 .nav-bar {
     display: flex;
@@ -83,7 +89,7 @@ body {
 }
 
 
-/*  */
+/* phần dropdown nút home */
 
 .dropdown-content-grid {
     display: grid;
@@ -121,6 +127,9 @@ body {
     pointer-events: auto;
 }
 
+
+/* quả ảnh to đùng với cái container "adopt a pet" */
+
 .sign-in {
     width: 100%;
     display: flex;
@@ -155,6 +164,9 @@ body {
     display: flex;
     width: 100%;
 }
+
+
+/* phần welcome to pet care và hình con dog */
 
 .mid>.welcome {
     width: 60%;
@@ -194,6 +206,9 @@ body {
     width: 30%;
     position: relative;
 }
+
+
+/* box emergency case (ae nào kiếm lại cái ảnh khác nhìn cho rõ) */
 
 .contact_box {
     width: 100%;
@@ -236,10 +251,16 @@ body {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
 }
 
+
+/* phần footer */
+
 .footer {
     color: white;
     background-color: rgb(27, 26, 26);
 }
+
+
+/* phần footer trên */
 
 .footer>.upper {
     height: 65%;
@@ -256,6 +277,9 @@ body {
     padding: 0 1rem 0 1rem;
 }
 
+
+/* phần tử bên trái của footer-left */
+
 .footer-left>.left-first-half {
     width: 60%;
     display: flex;
@@ -269,6 +293,9 @@ body {
 .left-first-half>i>span {
     color: white;
 }
+
+
+/*nửa còn lại của footer-left */
 
 .footer-left>.left-remain {
     margin-left: 2rem;
@@ -321,6 +348,9 @@ body {
     width: 100%;
 }
 
+
+/* phần footer dưới */
+
 .footer>.lower {
     display: flex;
     justify-content: space-between;
@@ -359,6 +389,7 @@ body {
 
 .lower-right>div>a {
     color: white;
+    margin-left: .2rem;
 }
 
 
