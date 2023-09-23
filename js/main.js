@@ -47,10 +47,3 @@ changeBackgroundRightButton.addEventListener("click", () => {
 
 // Set the initial background image
 changeBackgroundImage();
-
-const prompt = require("prompt-sync")({ sigint: true });
-const a = [];
-let n = prompt();
-for (let i = 0; i < n; i++)
-    a.push(prompt(i));
-console.log(a);
