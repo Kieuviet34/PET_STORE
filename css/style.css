@@ -19,6 +19,7 @@ body {
     padding: 0 2rem 0 2rem;
     height: 3rem;
     align-items: center;
+    color: white;
 }
 
 .FAQ>a {
