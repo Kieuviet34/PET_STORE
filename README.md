@@ -28,19 +28,20 @@ Triển khai project:
         |        |
         |        |___có thể ném phần html, css của từng container chứa sản phẩm vào đây
         |
-        |_______css
+        |______assets
+        |        |_______css
+        |        |        |
+        |        |        |___style.css(style tổng)
+        |        |        |
+        |        |        |___home.css(style cho homepage)
+        |        |        |
+        |        |        |___các file css cho các trang html con
         |        |
-        |        |___style.css(style tổng)
-        |        |
-        |        |___home.css(style cho homepage)
-        |        |
-        |        |___các file css cho các trang html con
-        |
-        |______js
-        |       |
-        |       |___main.js
-        |       |
-        |       |__các file js cho các trang html con(nếu có)
+        |        |______js
+        |                |
+        |                |___main.js
+        |                |
+        |                |__các file js cho các trang html con(nếu có)
         |
         |____views
                 |
