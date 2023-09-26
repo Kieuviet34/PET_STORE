@@ -1,18 +1,10 @@
 # PET_STORE
 bài tập lớn thiết kế web:
-NOTE:
-    -folder views chứa file HTML (homepage, login page, etc)
-    -folder css lưu lại style cho từng page
-    -products thì ném ảnh sản phẩm vào (đồ ăn, chuông, xích, etc)
-    -img lưu mấy ảnh như trang homepage trình bày (ảnh tượng trưng như ảnh thú cưng)
-    -assets thì lưu cái bootstrap với font chữ (chắc để sau chỉnh lại)
-    -js lưu script của web
-AMBATOKUM !!!
-
 #NOTE :
-Ae chia việc làm báo cáo trên word, web mình tôi deploy lên web server tôi tạo
-Anh Nho: word, kiếm ảnh với banner
-Lâm, Minh, Huy, Việt, Lâm: Figma, làm web với deploy
+Ae chia việc làm báo cáo trên word, web tôi deploy lên web server tôi tạo
+Anh Nho: word, kiếm ảnh với banner, nghiên cứu thêm style cho web
+Lâm, Minh, Huy, Việt, Lâm: Figma, làm web với deploy.
+
 
 Triển khai project:
     PET_STORE
@@ -28,6 +20,8 @@ Triển khai project:
         |        |
         |        |___có thể ném phần html, css của từng container chứa sản phẩm vào đây
         |
+        |
+        |
         |______assets
         |        |_______css
         |        |        |
@@ -37,11 +31,17 @@ Triển khai project:
         |        |        |
         |        |        |___các file css cho các trang html con
         |        |
-        |        |______js
-        |                |
-        |                |___main.js
-        |                |
-        |                |__các file js cho các trang html con(nếu có)
+        |        |_______js
+        |        |        |
+        |        |        |___main.js
+        |        |        |
+        |        |        |__các file js cho các trang html con(nếu có)
+        |        |
+        |        |_______boostrap
+        |                    |
+        |                    |---css (chứa file css của bootstrap 5)
+        |                    |
+        |                    |___js (js của bootstrap 5)
         |
         |____views
                 |
